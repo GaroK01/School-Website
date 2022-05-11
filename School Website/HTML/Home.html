@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/Home.css">
+    <script src="../JavaScript/Home.js"></script>
+    <title>Home</title>
+  </head>
+
+  <body>
+    <div style="background-color: black;">
+      <center> <img src="../unnamed.png"></center>
+
+      <header>
+        <nav class="navbar navbar-expand-md bg-dark navbar-dark fixed ">
+          <span class="navbar-brand">Menu</span>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a class="nav-link" href="./Home.html">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="./Admissions.html">Admissions</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Apply.html">Apply</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./Student.html">Student Page</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link" href="./Academic.html">Academic</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./News.html">News</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    </div>
+    <main>
+      <div class="home">
+        <h2>History</h2>
+        <p class="paragraph1">
+          <span style="  font-size: 1cm; color:powderblue; margin-left:20px;">R</span>un by the Armenian Catholic Patriarchate, Mesrobian Armenian Catholic High School is a co-educational
+          institution that handles all sections, from kindergarten to Lebanese Baccalaureate.
+
+          The academic program is offered in a quadrilingual educational system that is in Armenian, Arabic, French, and
+          English. The school’s educational system meets completely with the requirements of the Lebanese state program.
+          Moreover, as a national and Christian educational institution, the school also gives vital importance to the
+          students’ Armenian and spiritual education, through Armenian language, literature, and history courses, and
+          through various extracurricular activities and events.
+
+          Mesrobian High School is founded in 1939, by the Catholicos Patriarch of the Armenian Catholic Church Krikoris
+          Aghajanian. Born in a modest conditions, the school developed year after year, rising to become a leading
+          educational institution in the Lebanese Armenian community. The school’s principals were: Father Boghos
+          Bezdigian (1939-1951), Father Boghos Aris (1951-1952), Father Mesrob Terzian (1952-1958), Father Clement
+          Maljian (1958-1962), Father Grigoris Gabroyan (1962-1969, current Catholicos Patriarch of the Armenian
+          Catholic Church), Father Mesrob Djourian (1969-1981), Father Yeghia Yeghiaian (1981-1992), Father Kevork
+          Yeghiaian (1992-2001). Mr. Gregoire Kaloust serves as the current principal.
+        </p>
+        <div>
+          <h2>
+            Location
+          </h2>
+          <p class="paragraph1">
+            <span style="  font-size: 1cm; color:powderblue; margin-left:20px;">M</span>esrobian is set in Bourj Hammoud, the stronghold of the Lebanese Armenian community. There, in the 1920s,
+            the school had a leading and significant role in the reformation and the reorganization of the
+            socio-economic and cultural life of the then young Armenian community, displaced because of the Cilician
+            deportation during the years of the Armenian Genocide.
+            <p style="font-size: x-small;color:gray">
+              Go to the admissions to view the location on the map
+            </p>
+          </p>
+        </div>
+      </div>
+      <div class="home">
+        <h2>
+          Anthem
+        </h2>
+        <audio autoplay="" controls="" loop="" >
+          <source src="http://www.mesrobian.com/Albums/6/Misc/HymneMesrobian1couplet.mp3" type="audio/mpeg"> </audio>
+      </div>
+      <div>
+        <h2 style="margin-left: 50px;margin-top: 40px;">
+          Pictures
+        </h2>
+       <center><img class="mySlides1 img-thumbnail" id="img"src="../0e8059d1-ab65-4d9d-80e7-f0f50477bfea.jpg" >
+        <img class="mySlides img-thumbnail" id="img"src="../7896bcaa-63f7-4fe7-87f2-08327889e034.jpg" >
+        <img class="mySlides img-thumbnail"  src="../ce0d2d6b-ca33-404f-973a-9b4af59a48ed.jpg"id="img">
+       
+               
+        <img class=" img-thumbnail" src="../07844f8d-15a4-4fc4-a8f0-bcdbfaba5d54.jpg" id="img">
+        <img class=" img-thumbnail" src="../c955ec3e-c400-4b52-adcf-e8d56c259f1e.jpg" id="img">
+      </div>
+    </main>
+    <script>
+      var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+    </script>
+</html>

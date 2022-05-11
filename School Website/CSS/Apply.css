@@ -1,0 +1,43 @@
+label{
+    color: blue;
+}
+input{
+    border: 2px ridge palegreen;
+    border-radius: 55px;
+}
+body{
+    background-color: silver;
+}
+a:hover{
+    color:crimson;
+    text-transform: uppercase;
+}
+select{
+    border: 2px ridge palegreen;
+}
+select option:hover,
+    select option:focus,
+    select option:active {
+        background: black;     
+        color: green;
+    }
+
+    select option:checked {
+        background: linear-gradient(#d6d6d6,red);
+    
+        color: #000000 !important;
+    }
+footer{
+    color:yellow;
+}
+h1{
+    text-shadow: 1px 1px 2px black, 0 0 25px black, 0 0 5px white;
+
+}
+input:hover{
+    background-color:gold;
+    color: white;
+}
+span{
+    color:green;
+}

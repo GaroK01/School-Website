@@ -1,0 +1,68 @@
+a:hover{
+    color:crimson;
+    text-transform: uppercase;
+}
+body{
+    background-color: #28334AFF;
+}
+h1,h3{
+    color:#FF6103;
+    text-decoration: underline;
+
+
+}
+h1:hover,h3:hover{
+    color:yellow;
+}
+.date{
+    font-family: monospace;
+    color:lightgray;
+    margin-top: 10px;
+margin-left: 5px;
+}
+.date a{
+    color:lightgray;
+    text-decoration: underline;
+}
+.date a:hover{
+    color:lightgreen;
+
+}
+.paragraph{
+    margin-top: 10px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+    color:wheat;
+    font-size: large;
+    line-height: 0.7cm;
+    word-spacing: 3px;
+    float:right;
+    margin-left: 5px;
+}
+.first{
+    font-size: xx-large;
+    color: yellow;
+    margin-left: 20px;
+}
+.image{
+    float:left;
+    margin-right: 10px;
+}
+.img-thumbnail{
+ width:380px;
+ height:250px;
+}
+.section{
+    margin-top: 2cm;
+}
+#pic{
+    float:right;
+    
+    width:250px;
+    height:250px;
+    margin-top: -250px;
+   margin-right: 500px;
+}
+.image1{
+    margin-left: 40px;
+ 
+}
